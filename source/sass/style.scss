@@ -1,0 +1,50 @@
+// Global
+
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global-styles.scss";
+
+// Header
+
+@import "blocks/header/header.scss";
+@import "blocks/header/burger.scss";
+@import "blocks/header/site-navigation.scss";
+@import "blocks/header/user-navigation.scss";
+@import "blocks/header/menu-mobile--nojs.scss";
+
+// ============= Main
+
+// Promo
+
+@import "blocks/main/promo/promo.scss";
+@import "blocks/main/promo/promo-buttons.scss";
+@import "blocks/main/promo/promo-dots.scss";
+
+// Advantage
+
+@import "blocks/main/advantage/advantage.scss";
+
+// Catalog
+
+@import "blocks/main/catalog/catalog.scss";
+@import "blocks/main/catalog/country-filter.scss";
+@import "blocks/main/catalog/filter-reset-btn.scss";
+@import "blocks/main/catalog/milk-filter.scss";
+@import "blocks/main/catalog/pagination.scss";
+@import "blocks/main/catalog/price-filter.scss";
+@import "blocks/main/catalog/product-add-to-basket.scss";
+@import "blocks/main/catalog/product.scss";
+@import "blocks/main/catalog/sort.scss";
+@import "blocks/main/catalog/catalog-product.scss";
+
+// Map
+
+@import "blocks/main/map/map.scss";
+
+// Footer
+
+@import "blocks/footer/copyright.scss";
+@import "blocks/footer/footer-block--social.scss";
+@import "blocks/footer/footer-nav.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/social.scss";

@@ -1,0 +1,284 @@
+
+.promo {
+  background: $flat-white;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(180deg, $promo-background-1 0%, $promo-background-1 77%, $promo-background-2 77%);
+  }
+}
+
+.promo__wrapper {
+  position: relative;
+}
+
+.promo__carousel {
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+    padding-bottom: 200px;
+  }
+}
+
+.promo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  position: relative;
+  transition: transform 1s ease;
+  left: 0;
+}
+
+.promo__item {
+  position: relative;
+  padding-bottom: 60px;
+  padding-top: 310px;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 728px;
+    padding: 60px 35px 300px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1360px;
+    padding: 180px 60px 140px 696px;
+  }
+}
+
+.promo__item::before {
+  content: '';
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 280px 280px;
+  top: 20px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+    background-size: 476px 476px;
+    top: 351px;
+    left: 126px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+    background-size: 600px 600px;
+    top: 30px;
+    left: 65px;
+  }
+}
+
+.promo__item--product-1::before {
+  background-image: url('../img/promo-products/декаф-флэт-уайт.png');
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/promo-products/декаф-флэт-уайт@2x.png');
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url('../img/promo-products/декаф-флэт-уайт-tablet.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-products/декаф-флэт-уайт-tablet@2x.png');
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../img/promo-products/декаф-флэт-уайт-desktop.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-products/декаф-флэт-уайт-desktop@2x.png');
+    }
+  }
+}
+
+.promo__item--product-2::before {
+  background-image: url('../img/promo-products/лавандовый-латте.png');
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/promo-products/лавандовый-латте@2x.png');
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url('../img/promo-products/лавандовый-латте-tablet.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-products/лавандовый-латте-tablet@2x.png');
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../img/promo-products/лавандовый-латте-desktop.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-products/лавандовый-латте-desktop@2x.png');
+    }
+  }
+}
+
+.promo__item--product-3::before {
+  background-image: url('../img/promo-products/тройной-эспрессо.png');
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/promo-products/тройной-эспрессо@2x.png');
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url('../img/promo-products/тройной-эспрессо-tablet.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-products/тройной-эспрессо-tablet@2x.png');
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../img/promo-products/тройной-эспрессо-desktop.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-products/тройной-эспрессо-desktop@2x.png');
+    }
+  }
+}
+
+.promo__badge {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $base-primary;
+  margin-bottom: 4px;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.promo__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 57px;
+    line-height: 80px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.promo__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 41px;
+  }
+}
+
+.promo__text-wrapping {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.promo__price-old {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration: line-through;
+  color: $base-primary;
+  margin-right: 2px;
+  margin-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
+    margin-left: 0;
+  }
+}
+
+.promo__price-new {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-right: 15px;
+}
+
+.promo__button-order {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 20px;
+  background-color: $base-primary;
+  color: $base-white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.promo__button-order:hover,
+.promo__button-order:focus {
+  background: $primary-lighter;
+}
+
+.promo__button-order:active {
+  background: $primary-darker;
+}
+
+.promo__button-order:disabled {
+  background: $base-grey;
+  cursor: auto;
+}
+
+
+
+@media (min-width: $tablet-width) {
+
+  .promo__price-block {
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: $desktop-width) {
+
+  .promo__text-wrapping {
+    display: block;
+  }
+
+  .promo__price-block {
+    text-align: left;
+  }
+}

@@ -1,0 +1,91 @@
+.filter__apply {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  width: 100%;
+  background-color: $base-primary;
+  color: $base-white;
+  border: none;
+  padding: 8px 14px;
+  margin-top: 6px;
+  margin-bottom: 24px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 40px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.filter__reset {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 24px;
+  width: 100%;
+  background-color: $base-white;
+  color: $base-primary;
+  border: none;
+  padding: 8px 14px;
+  margin-top: 6px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.3s ease-out, background-color 0.3s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 40px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.filter__reset:hover,
+.filter__reset:focus {
+  background-color: $primary-lighter;
+  color: $base-white;
+}
+
+.filter__reset:active {
+  background-color: $primary-darker;
+}
+
+.filter__reset:disabled {
+  background-color: $light-grey;
+  color: $base-white;
+  cursor: auto;
+}
+
+/* ========== Filter */
+
+@media (min-width: $tablet-width) {
+
+  .filter__title--price {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .filter__title--price {
+    margin-bottom: 30px;
+  }
+}

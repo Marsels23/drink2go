@@ -1,0 +1,59 @@
+/* ============= Country filter */
+
+.filter__label--country {
+  padding: 2px 0 2px 52px;
+}
+
+.filter__label--country::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  background: $base-grey;
+  transition: left 0.2s ease-in-out, background 0.2s ease;
+}
+
+.filter__label--country::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: $base-white;
+  transition: left 0.2s ease-in-out, background 0.2s ease;
+}
+
+.filter__label--country:hover.filter__label--country::before,
+.filter__label--country:focus.filter__label--country::before {
+  border: 2px solid $primary-lighter;
+  background: $primary-opacity;
+}
+
+.filter__checkbox:checked+.filter__label--country:before {
+  background: $base-primary;
+  border: none;
+}
+
+.filter__checkbox:checked+.filter__label--country:after {
+  left: 20px;
+}
+
+.filter__checkbox:disabled+.filter__label--country {
+  color: $base-grey;
+  cursor: auto;
+}
+
+.filter__checkbox:disabled+.filter__label--country::before {
+  background-color: $light-grey;
+  border: none;
+}
+
+.filter__checkbox:checked:disabled+.filter__label--country::after {
+  content: '';
+  background-color: $base-grey;
+}

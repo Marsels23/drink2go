@@ -1,0 +1,123 @@
+/* ================== Header */
+
+.header {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+
+  position: relative;
+  background-color: $base-white;
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  align-items: center;
+  padding: 0 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 20px;
+    grid-template-columns: min-content 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 40px;
+  }
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__logo-desktop,
+.header__logo-tablet {
+  display: none;
+}
+
+.header__logo-image {
+  width: 32px;
+  height: 36px;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+.header__logo-heading {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-weight: 400;
+    text-transform: none;
+    min-width: 135px;
+    letter-spacing: normal;
+    margin: 0;
+  }
+}
+
+/* =============== Tablet */
+
+@media (min-width: 767px) {
+  .header__logo {
+    display: none;
+  }
+
+  .header__logo-tablet {
+    display: block;
+    line-height: 0;
+    margin-right: 67px;
+  }
+
+  .header__logo-image--tablet {
+    width: 82px;
+    height: 36px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .nav__list {
+    justify-content: flex-start;
+  }
+}
+
+/* ================ Desktop */
+
+@media (min-width: 1440px) {
+  .header__logo-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo-tablet {
+    display: none;
+  }
+
+  .header__logo-desktop {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .header__logo-image--desktop {
+    width: 170px;
+    height: 36px;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+}

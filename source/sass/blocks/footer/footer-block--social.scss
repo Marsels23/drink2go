@@ -1,0 +1,40 @@
+/* =========================  Footer__block--social */
+
+.footer__block--social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.footer__logo-link {
+  font-size: 0;
+}
+
+.footer__logo-link--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__logo-image {
+  width: 82px;
+  height: 36px;
+}

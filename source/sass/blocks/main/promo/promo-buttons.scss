@@ -1,0 +1,137 @@
+/* ========== Promo-buttons */
+
+.promo__button-prev,
+.promo__button-next {
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    z-index: 5;
+  }
+}
+
+.promo__button-prev {
+  left: 0;
+}
+
+.promo__button-next {
+  right: 0;
+}
+
+.promo__button-prev::before,
+.promo__button-next::before {
+  content: '';
+  position: absolute;
+  background-image: url('../img/decorative/arrow-promo.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 11px;
+  height: 20px;
+}
+
+.promo__button-prev::before {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    right: 35px;
+    top: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 357px;
+  }
+}
+
+.promo__button-next::before {
+  transform: rotate(180deg) translateY(-50%);
+  left: 5px;
+  top: 300px;
+
+  @media (min-width: $tablet-width) {
+    left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 336px;
+  }
+}
+
+.promo__button-prev:hover,
+.promo__button-prev:focus {
+  background: linear-gradient(90deg, $base-white 0%, $promo-btn-hover 100%);
+}
+
+.promo__button-next:hover,
+.promo__button-next:focus {
+  background: linear-gradient(270deg, $base-white 0%, $promo-btn-hover 100%);
+}
+
+.promo__button-prev:active {
+  background: linear-gradient(90deg, $promo-btn-active-1 0%, $promo-btn-active-2 100%);
+}
+
+.promo__button-next:active {
+  background: linear-gradient(270deg, $promo-btn-active-1 0%, $promo-btn-active-2 100%);
+}
+
+.promo__button-prev:disabled.promo__button-prev::before {
+  background-image: url('../img/decorative/arrow-disabled.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 11px;
+  height: 20px;
+  right: 5px;
+
+  @media (min-width: $tablet-width) {
+    right: 35px;
+  }
+}
+
+.promo__button-next:disabled.promo__button-next::before {
+  background-image: url('../img/decorative/arrow-disabled.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 11px;
+  height: 20px;
+  left: 5px;
+  transform: rotate(180deg) translateY(-50%);
+  top: 47%;
+
+  @media (min-width: $tablet-width) {
+    left: 35px;
+    top: 36%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 52%;
+  }
+}
+
+.promo__button-prev:disabled.promo__button-prev,
+.promo__button-next:disabled.promo__button-next {
+  cursor: auto;
+  background: transparent;
+}
+
+/* ============= Desktop */
+
+@media (min-width: $desktop-width) {
+  .promo {
+    margin-bottom: 0;
+    background: $flat-white;
+    padding-bottom: 61px;
+  }
+
+  .promo__carousel {
+    overflow: hidden;
+    padding-bottom: 19px;
+  }
+}

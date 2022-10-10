@@ -1,0 +1,77 @@
+/* ============= Milk filter */
+
+.filter__label--milk::after {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $base-primary;
+  left: 4px;
+  top: 4px;
+}
+
+.filter__label--milk:hover.filter__label--milk::before,
+.filter__label--milk:focus.filter__label--milk::before {
+  border: 2px solid $base-primary;
+}
+
+.filter__label--milk:hover.filter__label--milk::after,
+.filter__label--milk:focus.filter__label--milk::after {
+  content: '';
+  background-color: $primary-opacity;
+}
+
+.filter__radio:checked+.filter__label--milk::after {
+  content: '';
+  background-color: $base-primary;
+}
+
+.filter__radio:checked+.filter__label--milk::before {
+  border: 2px solid $base-primary;
+}
+
+.filter__label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.filter__label--milk {
+  padding: 2px 0 2px 34px;
+}
+
+.filter__label--milk::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid $base-grey;
+  left: 0;
+  top: 0;
+}
+
+.filter__radio:disabled+.filter__label--milk::before {
+  border: 2px solid $light-grey;
+}
+
+.filter__radio:disabled+.filter__label--milk::after {
+  background-color: transparent;
+}
+
+.filter__radio:disabled+.filter__label--milk {
+  color: $base-grey;
+  cursor: auto;
+}
+
+.filter__radio:checked:disabled+.filter__label--milk::after {
+  content: '';
+  background-color: $light-grey;
+}
+
+.filter__radio:checked:disabled+.filter__label--milk::before {
+  border: 2px solid $light-grey;
+}
