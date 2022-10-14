@@ -1,3 +1,4 @@
+/* =========== Promo */
 
 .promo {
   background: $flat-white;
@@ -261,7 +262,7 @@
   cursor: auto;
 }
 
-
+/* ========== Tablet */
 
 @media (min-width: $tablet-width) {
 
@@ -270,7 +271,7 @@
   }
 }
 
-
+/* =============== Desktop */
 
 @media (min-width: $desktop-width) {
 

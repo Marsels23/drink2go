@@ -1,45 +1,61 @@
-.filter__apply {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  width: 100%;
-  background-color: $base-primary;
-  color: $base-white;
-  border: none;
-  padding: 8px 14px;
-  margin-top: 6px;
-  margin-bottom: 24px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
+.filter__buttons {
+  width: 160px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    width: auto;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin: 40px auto 0;
+    display: flex;
+    width: 316px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 318px;
+  }
+
+}
+
+.filter__form {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  box-sizing: border-box;
+  background-color: $base-primary;
+  color: $base-white;
+  border: none;
+  padding: 10.6px 14.5px;
+  margin-top: 6px;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding: 8px 3.5px;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 4.5px;
+    margin: 0;
   }
 }
 
 .filter__reset {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 24px;
-  width: 100%;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  box-sizing: border-box;
   background-color: $base-white;
   color: $base-primary;
   border: none;
-  padding: 8px 14px;
+  padding: 10.6px 16.5px;
   margin-top: 6px;
+  border-radius: 4px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -54,7 +70,9 @@ line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    padding: 8px 11.5px;
+    margin: 0;
+    left: 90px;
   }
 }
 
@@ -77,14 +95,12 @@ line-height: 24px;
 /* ========== Filter */
 
 @media (min-width: $tablet-width) {
-
   .filter__title--price {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .filter__title--price {
     margin-bottom: 30px;
   }

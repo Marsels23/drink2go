@@ -98,10 +98,15 @@
 /* ======== Tablet */
 
 @media (min-width: $tablet-width) {
-
   .filter__fieldset-blocks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter__fieldset-blocks {
+    margin-bottom: 40px;
   }
 }
